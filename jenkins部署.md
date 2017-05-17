@@ -241,7 +241,6 @@ Subversion URL that's currently checked out to the workspace.
 ### Saltstack Master安装 ##
 在jenkins主机上安装salt-master
 由于我的机器上已经安装了我就不安装了
-![](http://i.imgur.com/FBmIQmm.png)
 master安装
 ```
 yum install salt-master.noarch -y
@@ -283,7 +282,6 @@ vim /etc/salt/master
   base:
    - /srv/salt/
 ```
-![](http://i.imgur.com/tBnInO4.png)
 minion修改的比较少
 ```
 [root@testtomcat salt]# cat minion  | grep -v "^#" | grep -v "^$"
@@ -291,7 +289,6 @@ minion修改的比较少
   master_port: 4506
   user: root
 ```
-![](http://i.imgur.com/74YVWPS.png)
 ### master上添加minion ###
 由于我已经添加进来了就不演示添加了，salt-key -a 主机名是添加minion主机
 ```
@@ -322,6 +319,3 @@ start-code:
     - name: /root/kemibkapp/bin/catalina.sh  start
 
 ```
-![](http://i.imgur.com/cg5fm9b.png)
-
-文档比较简单大家勿喷
